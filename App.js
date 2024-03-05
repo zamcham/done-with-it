@@ -6,25 +6,16 @@ import {
   TouchableOpacity,
   Image,
   View,
-  SafeAreaView
+  SafeAreaView,
+  Button,
+  Alert,
+  Platform,
 } from 'react-native';
 
 export default function App() {
-  const handlePress = () => console.log('Text pressed');
-
   return (
     <SafeAreaView style={styles.container}>
-      <Text onPress={handlePress}>Hello World!</Text>
-      <TouchableOpacity onPress={() => console.log("Image tapped")}>
-        <Image
-          source={{
-            width: 200,
-            height: 300,
-            uri: 'https://picsum.photos/200/300',
-
-          }}
-        />
-      </TouchableOpacity>
+      <Button title="Click Me" onPress={() => Alert.alert("My title", "My string")} />
     </SafeAreaView>
   );
 }
@@ -33,5 +24,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
+    paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
   },
 });
