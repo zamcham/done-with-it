@@ -2,20 +2,26 @@ import { StatusBar } from 'expo-status-bar';
 import {
   StyleSheet,
   Text,
-  TouchableWithoutFeedback,
-  TouchableOpacity,
-  Image,
   View,
   SafeAreaView,
-  Button,
-  Alert,
   Platform,
 } from 'react-native';
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Button title="Click Me" onPress={() => Alert.alert("My title", "My string")} />
+      <View style={{
+        backgroundColor: 'dodgerblue',
+        width: '100%',
+        height: 70,
+      }}>
+        <Text style={{
+          color: 'white',
+          fontSize: 30,
+          textAlign: 'center',
+          lineHeight: 70,
+        }}>Hello World</Text>
+      </View>
     </SafeAreaView>
   );
 }
