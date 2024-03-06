@@ -7,19 +7,11 @@ import {
   SafeAreaView,
   Platform,
 } from 'react-native';
+import WelcomeScreen from './app/screens/WelcomeScreen';
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
-      <View style={StyleSheet.container}>
-        <Text style={{
-          color: 'white',
-          fontSize: 30,
-          textAlign: 'center',
-          lineHeight: 70,
-        }}>Hello World</Text>
-      </View>
-    </SafeAreaView>
+    <WelcomeScreen />
   );
 }
 
