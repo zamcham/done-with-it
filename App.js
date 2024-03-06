@@ -11,11 +11,7 @@ import {
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <View style={{
-        backgroundColor: 'dodgerblue',
-        width: '100%',
-        height: '30%',
-      }}>
+      <View style={StyleSheet.container}>
         <Text style={{
           color: 'white',
           fontSize: 30,
@@ -30,7 +26,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'blue',
     paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
   },
 });
