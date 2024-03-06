@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import {
+  Dimensions,
   StyleSheet,
   Text,
   View,
@@ -13,7 +14,7 @@ export default function App() {
       <View style={{
         backgroundColor: 'dodgerblue',
         width: '100%',
-        height: 70,
+        height: '30%',
       }}>
         <Text style={{
           color: 'white',
